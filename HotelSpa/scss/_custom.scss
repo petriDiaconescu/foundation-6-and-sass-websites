@@ -89,11 +89,16 @@ section.rooms {
 
 /*** Separator Image ***/
 .separator-image {
-  height: 300px;
+  height: 200px;
   background-position: center center;
   background-repeat: no-repeat;
-  
-  background-size: cover;
+  background-attachment: scroll;
+  @include breakpoint(medium) {
+    height: 350px;
+  }
+  @include breakpoint(large){
+    background-size: cover;
+  }
 }
 
 .pool-image {
