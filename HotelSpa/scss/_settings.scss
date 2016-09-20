@@ -50,7 +50,7 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #4472a9,
-  secondary: #777,
+  secondary: #dc3838,
   success: #3adb76,
   warning: #ffae00,
   alert: #ec5840,
@@ -233,7 +233,7 @@ $breadcrumbs-item-slash: true;
 // 11. Button
 // ----------
 
-$button-padding: 0.85em 1em;
+$button-padding: 0.85em 2em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
