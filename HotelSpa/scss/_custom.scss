@@ -30,9 +30,9 @@
   width: 100%;
   transform: translateY(-50%);
   h1 {
-    border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    color: #fff;
+    border-top: 2px solid $white;
+    border-bottom: 2px solid $white;
+    color: $white;
     text-transform: uppercase;
   }
 }
