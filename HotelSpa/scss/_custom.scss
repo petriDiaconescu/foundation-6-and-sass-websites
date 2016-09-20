@@ -86,3 +86,16 @@ section.rooms {
   font-size: rem-calc(16);
   margin: rem-calc(20 0);
 }
+
+/*** Separator Image ***/
+.separator-image {
+  height: 300px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+}
+
+.pool-image {
+  background-image: url(../assets/images/separators/large/separator01-image.jpg);
+}
