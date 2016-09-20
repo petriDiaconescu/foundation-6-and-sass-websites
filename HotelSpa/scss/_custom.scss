@@ -95,6 +95,7 @@ section.rooms {
   background-attachment: scroll;
   @include breakpoint(medium) {
     height: 350px;
+    background-size: cover;
   }
   @include breakpoint(large){
     background-size: cover;
@@ -102,5 +103,11 @@ section.rooms {
 }
 
 .pool-image {
-  background-image: url(../assets/images/separators/large/separator01-image.jpg);
+  background-image: url(../assets/images/separators/small/separator01-image.jpg);
+  @include breakpoint(medium){
+    background-image: url(../assets/images/separators/medium/separator01-image.jpg);
+  }
+  @include breakpoint(large){
+    background-image: url(../assets/images/separators/large/separator01-image.jpg);
+  }
 }
