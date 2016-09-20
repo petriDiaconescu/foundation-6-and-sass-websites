@@ -50,3 +50,26 @@
   }
 }
 
+
+section.rooms {
+  div.room-image {
+    position: relative;
+    
+    .room-title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding-left: rem-calc(20);
+      
+      h3 {
+        color: $white;
+      }
+    }
+  }
+  
+  div.room-content {
+    background-color: $white;
+    padding: rem-calc(20);
+  }
+}
+
