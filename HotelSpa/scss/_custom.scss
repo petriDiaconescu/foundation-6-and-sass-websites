@@ -111,3 +111,25 @@ section.rooms {
     background-image: url(../assets/images/separators/large/separator01-image.jpg);
   }
 }
+
+/** About Us Section  **/
+.about-us-gallery {
+  height: rem-calc(420);
+  position: relative;
+  
+  .empty {
+    height: rem-calc(420);
+  }
+  .bluebg {
+    background-color: $primary-color;
+  }
+  div.content-about-us {
+    position: absolute;
+    top: rem-calc(20);
+    left: 0;
+    width: 100%;
+    h2.white {
+      color: $white;
+    }
+  }
+}
