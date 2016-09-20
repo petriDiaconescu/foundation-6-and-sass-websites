@@ -36,3 +36,15 @@
     text-transform: uppercase;
   }
 }
+
+.menu-icon, 
+.menu-icon:hover {
+  width: rem-calc(60);
+  height: rem-calc(36);
+  margin-top: rem-calc(25);
+  &::after {
+    background-color: $white;
+    height: rem-calc(8);
+    box-shadow: 0 28px 0 $white, 0 14px 0 $white;
+  }
+}
