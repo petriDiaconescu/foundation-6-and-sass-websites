@@ -114,22 +114,41 @@ section.rooms {
 
 /** About Us Section  **/
 .about-us-gallery {
-  height: rem-calc(420);
-  position: relative;
+  @include breakpoint(large){
+    height: rem-calc(560);
+    position: relative;
+  }
+  
+  @include breakpoint(medium){
+    height: rem-calc(420);
+    position: relative;
+  }
   
   .empty {
-    height: rem-calc(420);
-  }
-  .bluebg {
-    background-color: $primary-color;
-  }
-  div.content-about-us {
-    position: absolute;
-    top: rem-calc(20);
-    left: 0;
-    width: 100%;
-    h2.white {
-      color: $white;
+    @include breakpoint(large){
+      height: rem-calc(560);
+    }
+    
+    @include breakpoint(medium){
+      height: rem-calc(420);
     }
   }
+  
+  div.content-about-us {
+    @include breakpoint(medium){
+      position: absolute;
+      top: rem-calc(20);
+      left: 0;
+      width: 100%;
+      
+    }
+  }
+}
+
+.bluebg {
+  background-color: $primary-color;
+}
+
+h2.white {
+  color: $white;
 }
