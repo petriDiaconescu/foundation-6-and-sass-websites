@@ -166,3 +166,34 @@ h2.white {
 section.booking {
   padding: rem-calc(50);
 }
+
+footer {
+  background-color: $primary-color;
+  padding-top: rem-calc(30);
+  color: $white;
+  
+  .menu {
+    a {
+      color: $white;
+    }
+  }
+  
+  .contact-information {
+    li {
+      position: relative;
+      height: 100px;
+      padding-left: 60px;
+      padding-top: 35px;
+      
+      &:first-child {
+        padding-top: 22px;
+      }
+      i {
+        font-size: rem-calc(60);
+        position: absolute;
+        top: 0; left: 0;
+      }
+    }
+    
+  }
+}
