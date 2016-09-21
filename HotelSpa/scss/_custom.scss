@@ -193,7 +193,16 @@ footer {
         position: absolute;
         top: 0; left: 0;
       }
+    }  
+  }
+  .social {
+    i {
+      font-size: rem-calc(60);
     }
-    
+  }
+  p.copyright {
+    padding: rem-calc(20 0);
+    background-color: darken($primary-color, 5);
+    margin: 0;
   }
 }
