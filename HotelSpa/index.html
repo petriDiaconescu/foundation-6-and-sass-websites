@@ -136,7 +136,7 @@
                 
                 <!-- MODALS -->
                 <div class="reveal" id="galleryModal" data-close-on-click="true"
-                     data-reveal data-animation="scale-in-up" data-animation-out="scale-out-down">
+                     data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
                   <img src="" id="imageContainer"/>
                   <button class="close-button" data-close aria-label="Close Reveal" type="button">
                     <span aria-hidden="true">&times;</span>
@@ -195,10 +195,43 @@
                 content still not being ready. Think of a news blog that's filled with 
                 content hourly on the day of going live.
               </p>
-              <a href="" class="button">Book Now</a>
+              <a data-open="modalBook" class="button">Book Now</a>
             </div>
           </section>
 
+          <div class="reveal" id="modalBook" data-reveal 
+              data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+            <h2 class="text-center">Booking Form</h2>
+            
+            <form action="">
+              <div class="row columns">
+                <label>Name:
+                  <input type="text" placeholder="Your Name"/>
+                </label>
+              </div>
+              <div class="row columns">
+                <label>Email:
+                  <input type="email" placeholder="Your Email"/>
+                </label>
+              </div>
+              <div class="row columns">
+                <label>Phone Number:
+                  <input type="tel" placeholder="Your Phone Number"/>
+                </label>
+              </div>
+              <div class="row columns">
+                <label>Message:
+                  <textarea placeholder="Your Message"></textarea>
+                </label>
+              </div>
+              <div class="row columns">
+                <input type="submit" class="button" value="Submit"/>
+              </div>
+              <button class="close-button" data-close aria-label="Close Reveal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </form>
+          </div>
           <footer>
             <div class="row">
               <nav class="large-5 columns">
