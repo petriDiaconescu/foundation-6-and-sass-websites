@@ -135,8 +135,12 @@
                 </div>
                 
                 <!-- MODALS -->
-                <div class="reveal" id="galleryModal" data-reveal>
+                <div class="reveal" id="galleryModal" data-close-on-click="true"
+                     data-reveal data-animation="scale-in-up" data-animation-out="scale-out-down">
                   <img src="" id="imageContainer"/>
+                  <button class="close-button" data-close aria-label="Close Reveal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
                 <!-- End of MODALS -->
                 <div id="gallery" class="medium-6 columns bluebg">
