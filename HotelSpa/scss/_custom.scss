@@ -228,3 +228,13 @@ div.off-canvas {
 section.content {
   padding: rem-calc(30 0);
 } 
+
+/*** Services  ***/
+section.services .content-text{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  @include breakpoint(medium){
+    height: 300px;
+  }
+}
