@@ -12,4 +12,8 @@ $(function(){
     $('#galleryModal #imageContainer').attr('src', fullPath);
   });
 });
+
+$(window).resize(function(){
+  getHeight();
+});
 $(document).foundation();
