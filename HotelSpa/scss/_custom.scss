@@ -60,6 +60,9 @@ h2 {
 
 section.rooms {
   padding: rem-calc(30 0);
+  a {
+    color: $black;
+  }
   div.room-image {
     position: relative;
     
@@ -121,6 +124,16 @@ section.rooms {
   }
   @include breakpoint(large){
     background-image: url(../assets/images/separators/large/separator02-image.jpg);
+  }
+}
+
+.rooms-image {
+  background-image: url(../assets/images/separators/small/separator03-image.jpg);
+  @include breakpoint(medium){
+    background-image: url(../assets/images/separators/medium/separator03-image.jpg);
+  }
+  @include breakpoint(large){
+    background-image: url(../assets/images/separators/large/separator03-image.jpg);
   }
 }
 
