@@ -91,6 +91,11 @@ section.rooms {
   font-size: rem-calc(16);
   margin: rem-calc(20 0);
 }
+.button.reset {
+  @include button-hollow;
+  border: 2px solid $secondary-color;
+  color: $secondary-color;
+}
 
 /*** Separator Image ***/
 .separator-image {
