@@ -249,13 +249,10 @@ div.off-canvas {
 
 /*** INTERNAL PAGES ***/
 section.content {
-  padding: rem-calc(30 0);
+  padding: rem-calc(30 0 0 0);
 } 
 
-/** Rooms **/
-section.content.rooms{
-  padding: 0;
-} 
+
 
 
 /*** Services  ***/
