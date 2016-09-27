@@ -62,7 +62,7 @@
             <div class="row">
               <div class="large-6 columns large-centered">
                 <div class="roomMenu">
-                  <ul class="menu horizontal expanded">
+                  <ul class="menu horizontal expanded" data-magellan>
                     <li><a href="#room-info">Information</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#booking">Booking</a></li>
@@ -71,7 +71,7 @@
               </div>  
             </div>
             
-            <section class="room-info">
+            <section id="room-info" data-magellan-target="roon-info" class="room-info">
               <div class="row">
                 <div class="large-10 columns large-centered">
                   <p class="text-center">Lorem ipsum dolor sit amet, diam etiam duis lorem lacus, nam mi, praesent tortor aspernatur 
@@ -95,7 +95,7 @@
               </div><!-- row -->
             </section>
             
-            <section class="gallery bluebg">
+            <section id="gallery" data-magellan-target="gallery" class="gallery bluebg">
               <div class="row">
                 <h2 class="white text-center">Gallery</h2>
                 
@@ -126,7 +126,7 @@
 
 
           <!-- Booking section -->
-          <section class="booking row">
+          <section id="booking" data-magellan-target="booking" class="booking row">
             <div class="large-8 large-centered columns text-center">
               <h2>Book Now</h2>
               <p>In a professional context it often happens that private or corporate 
