@@ -20,11 +20,13 @@
       <li>{{this}}</li>
     {{/each}}
     
-    <h1>Employees</h1>
-    
-    {{#each employees}}
-      <li>{{this.name}} {{this.lname}}</li>
-    {{/each}}
+    {{#ifpage 'index' 'about'}}
+      <h1>Employees</h1>
+
+      {{#each employees}}
+        <li>{{this.name}} {{this.lname}}</li>
+      {{/each}}
+    {{/ifpage}}
     <script src="{{root}}assets/js/app.js"></script>
   </body>
 </html>
