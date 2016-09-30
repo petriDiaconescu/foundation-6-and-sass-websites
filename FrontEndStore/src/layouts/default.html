@@ -11,22 +11,12 @@
   </head>
   <body>
 
-    {{> navigation}}
-    {{> body}}
+    <div class="row">
+      <div class="shrink columns">this will take the content width</div>
+      <div class="columns">take the rest!</div>
+    </div>
     
-    <h1>To Do</h1>
     
-    {{#each todo}}
-      <li>{{this}}</li>
-    {{/each}}
-    
-    {{#ifpage 'index' 'about'}}
-      <h1>Employees</h1>
-
-      {{#each employees}}
-        <li>{{this.name}} {{this.lname}}</li>
-      {{/each}}
-    {{/ifpage}}
     <script src="{{root}}assets/js/app.js"></script>
   </body>
 </html>
