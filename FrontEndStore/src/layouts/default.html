@@ -13,7 +13,18 @@
 
     {{> navigation}}
     {{> body}}
-
+    
+    <h1>To Do</h1>
+    
+    {{#each todo}}
+      <li>{{this}}</li>
+    {{/each}}
+    
+    <h1>Employees</h1>
+    
+    {{#each employees}}
+      <li>{{this.name}} {{this.lname}}</li>
+    {{/each}}
     <script src="{{root}}assets/js/app.js"></script>
   </body>
 </html>
