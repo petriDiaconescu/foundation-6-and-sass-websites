@@ -1,4 +1,6 @@
-$(document).foundation();
+$(document).foundation(
+  
+);
 
 $(window).on('changed.zf.mediaquery', function(event, newSize, oldSize){
   //console.log('The new size is:' + newSize);
