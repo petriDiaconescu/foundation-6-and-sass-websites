@@ -1,6 +1,5 @@
-body {
+.body-wrapper {
   min-height: 100%;
-  
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bb6cd1+0,4172b7+100 */
   background: rgb(187,108,209); /* Old browsers */
   background: -moz-linear-gradient(top, rgba(187,108,209,1) 0%, rgba(65,114,183,1) 100%); /* FF3.6-15 */
@@ -9,3 +8,30 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bb6cd1', endColorstr='#4172b7',GradientType=0 ); /* IE6-9 */
 }
 
+header {
+  padding: rem-calc(50 0);
+}
+
+.main-navigation {
+  background-color: $primary-color;
+  margin-bottom: rem-calc(20);
+}
+
+.menu {
+  > li {
+    &.active,
+    &:hover {
+      background-color: $secondary-color;
+      
+      a {
+        color: $primary-color;
+      }
+    }
+    > a {
+      color: $white;
+      font-weight: bold;
+      text-transform: uppercase;
+      justify-content: space-around!important;
+    }
+  }
+}
