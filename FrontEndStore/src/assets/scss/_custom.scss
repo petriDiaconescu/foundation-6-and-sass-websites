@@ -51,3 +51,17 @@ div.orbit {
   background-color: $primary-color;
   padding: rem-calc(20);
 }
+
+div.about-us {
+  margin-top: rem-calc(30);
+  i {
+    font-size: rem-calc(60);
+    margin: rem-calc(20 0);
+    display: block;
+  }
+  
+  h3 {
+    margin-bottom: rem-calc(15);
+    text-transform: uppercase;
+  }
+}
