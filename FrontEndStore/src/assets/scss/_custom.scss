@@ -189,3 +189,14 @@ div.our-designs {
     }
   }
 }
+
+footer {
+  margin-top: rem-calc(20);
+  background-color: $primary-color;
+  padding: rem-calc(30 0);
+  p {
+    margin: 0;
+    font-weight: $global-weight-bold;
+    color: $white;
+  }
+}
