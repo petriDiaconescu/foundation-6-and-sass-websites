@@ -23,6 +23,13 @@ header {
 .main-navigation {
   background-color: $primary-color;
   margin-bottom: rem-calc(20);
+  width: 100%;
+  &.fixed {
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000;
+  }
 }
 
 .menu {
