@@ -124,6 +124,10 @@ div.our-designs {
   .orbit {
     background-color: $white;
     border-radius: $global-radius;
+    margin-bottom: rem-calc(20);
+    @include breakpoint(medium){
+      margin: 0;
+    }
     blockquote {
       font-size: rem-calc(20);
       cite {
@@ -132,16 +136,18 @@ div.our-designs {
     }  
   }
   
+  /**
   .imageTestimonials {
-      order: 2;
-      @include breakpoint(medium){
-        order: 1;
-      }
-    }
-    .ourTestimonials {
+    order: 2;
+    @include breakpoint(medium){
       order: 1;
-      @include breakpoint(medium){
-        order: 2;
-      }
     }
+  }
+  .ourTestimonials {
+    order: 1;
+    @include breakpoint(medium){
+      order: 2;
+    }
+  }
+  **/
 }
