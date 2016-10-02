@@ -129,6 +129,19 @@ div.our-designs {
       cite {
         font-weight: bold;
       }
-    }
+    }  
   }
+  
+  .imageTestimonials {
+      order: 2;
+      @include breakpoint(medium){
+        order: 1;
+      }
+    }
+    .ourTestimonials {
+      order: 1;
+      @include breakpoint(medium){
+        order: 2;
+      }
+    }
 }
