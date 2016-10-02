@@ -34,7 +34,6 @@ header {
 
 .menu {
   > li {
-    &.active,
     &:hover {
       background-color: $secondary-color;
       
@@ -47,6 +46,11 @@ header {
       font-weight: bold;
       text-transform: uppercase;
       justify-content: space-around!important;
+      
+      &.active {
+        color: $primary-color;
+        background-color: $secondary-color;
+      }
     }
   }
 }
