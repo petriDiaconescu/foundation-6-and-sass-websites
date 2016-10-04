@@ -21,6 +21,16 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('css'));
 });
 
+var JSFiles = [
+  './bower_components/foundation-sites/dist/foundation.js',
+  './bower_components/what-input/what-input.min.js'
+];
+
+gulp.task('moveJSFiles', function(){
+  gulp.src(JSFiles, {})
+    .pipe(gulp.dest('js/'));
+});
+
 gulp.task('browser-sync', function(){
   var files = [
     './style.css',
@@ -38,6 +48,6 @@ gulp.task('browser-sync', function(){
   });
 });
 
-gulp.task('default', ['sass', 'browser-sync'], function() {
+gulp.task('default', ['sass', 'browser-sync', 'moveJSFiles'], function() {
   gulp.watch(['scss/**/*.scss'], ['sass']);
 });
