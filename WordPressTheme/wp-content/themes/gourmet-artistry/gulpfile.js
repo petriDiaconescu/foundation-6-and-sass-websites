@@ -1,5 +1,7 @@
 var gulp = require('gulp');
 var $    = require('gulp-load-plugins')();
+var browserSync = require('browser-sync');
+var reload = browserSync.reload;
 
 var sassPaths = [
   'bower_components/foundation-sites/scss',
@@ -19,6 +21,23 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('css'));
 });
 
-gulp.task('default', ['sass'], function() {
+gulp.task('browser-sync', function(){
+  var files = [
+    './style.css',
+    './*.php',
+    './template-parts/*.php',
+    './inc/*.php',
+    './js/*.js',
+    'css/app.css'
+  ];
+  
+  //Initializes browserSync
+  browserSync.init(files, {
+    proxy: 'http://localhost',
+    notify: false
+  });
+});
+
+gulp.task('default', ['sass', 'browser-sync'], function() {
   gulp.watch(['scss/**/*.scss'], ['sass']);
 });
