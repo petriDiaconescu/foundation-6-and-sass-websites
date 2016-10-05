@@ -32,3 +32,23 @@ header {
   }
 }
 
+.main-navigation {
+  background-color: $primary-color;
+}
+
+.menu-main-navigation-container {
+  float: none!important;
+  @include grid-column-row;
+  .menu {
+    display:none;
+    @include breakpoint(medium){
+      display: table!important;
+      @include menu-expand;
+    }
+    li {
+      a {
+        color: $white;
+      }
+    }
+  }
+}
