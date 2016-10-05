@@ -1,3 +1,10 @@
+$headerImageTitle: 'Pinyon Script', cursive;
+$headerDescription: 'Yellowtail', cursive;
+
+.screen-reader-text {
+  display: none;
+}
+
 header {
   .header-image {
     height: rem-calc(376);
@@ -7,6 +14,17 @@ header {
     
     .site-branding {
       padding-top: rem-calc(120);
+      
+      h1.site-title {
+        font-family: $headerImageTitle;
+      }
+      p.site-description {
+        font-family: $headerDescription;
+        font-size: rem-calc(40);
+        border-bottom: 1px solid $white;
+        display: inline-block;
+        line-height: rem-calc(37);
+      }
       a,p {
         color: $white;
       }
