@@ -28,7 +28,7 @@ function gourmet_artistry_custom_header_setup() {
 		'height'                 => 439,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'gourmet_artistry_header_style',
-	) ) );
+	) ) ) ;
 }
 add_action( 'after_setup_theme', 'gourmet_artistry_custom_header_setup' );
 
