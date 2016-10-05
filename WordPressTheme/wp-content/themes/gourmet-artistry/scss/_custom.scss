@@ -1,2 +1,16 @@
-
+header {
+  .header-image {
+    height: rem-calc(376);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    .site-branding {
+      padding-top: rem-calc(120);
+      a, p {
+        color: $white;
+      }
+    }
+  }
+}
 
