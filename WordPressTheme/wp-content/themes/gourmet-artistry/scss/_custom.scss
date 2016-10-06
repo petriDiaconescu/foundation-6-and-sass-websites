@@ -34,6 +34,12 @@ header {
 
 .main-navigation {
   background-color: $primary-color;
+  
+  > span {
+    padding: rem-calc(10);
+    display: block;
+    text-align: right;
+  }
 }
 
 .menu-main-navigation-container {
@@ -41,9 +47,11 @@ header {
   @include grid-column-row;
   .menu {
     display:none;
+    @include menu-direction(vertical);
     @include breakpoint(medium){
       display: table!important;
       @include menu-expand;
+      @include menu-direction(horizontal);
     }
     li {
       a {
