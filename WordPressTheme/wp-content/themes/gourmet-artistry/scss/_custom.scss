@@ -40,6 +40,9 @@ header {
     display: block;
     text-align: right;
   }
+  button.menu-icon {
+    @include hamburger($white, $white, 50px, 30px, 6px, 3);
+  }
 }
 
 .menu-main-navigation-container {
@@ -54,8 +57,15 @@ header {
       @include menu-direction(horizontal);
     }
     li {
+      transition: all .3s ease-in-out;
+      &:hover {
+        background-color: darken($primary-color, 10);
+      }
       a {
         color: $white;
+        text-align: center;
+        font-weight: bold;
+        padding: rem-calc(20 0);
       }
     }
   }
