@@ -9,7 +9,7 @@
         ?>
         <li class="<?php echo $i==0 ? 'is-active' : ''; ?> orbit-slide">
           <a href="<?php the_permalink(); ?>">
-            <?php the_post_thumbnail() ?>
+            <?php the_post_thumbnail('slider') ?>
             <div>
               <h3 class="orbit-caption text-center">
                 <?php the_title(); ?>
