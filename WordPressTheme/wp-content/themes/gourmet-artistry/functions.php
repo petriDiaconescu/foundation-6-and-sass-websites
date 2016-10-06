@@ -104,6 +104,8 @@ add_action( 'widgets_init', 'gourmet_artistry_widgets_init' );
 function gourmet_artistry_scripts() {
   wp_enqueue_style( 'foundation-style', get_template_directory_uri() . '/css/app.css');
   
+  wp_enqueue_style( 'foundation-icons', get_template_directory_uri() . '/css/foundation-icons.css');
+  
 	wp_enqueue_script( 'gourmet-artistry-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
   
   wp_enqueue_script( 'jquery' );
