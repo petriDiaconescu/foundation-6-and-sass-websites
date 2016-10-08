@@ -117,3 +117,12 @@ header {
   }
 }
 
+/**    Sidebar widget     **/
+.widget_blog_entries {
+  margin-top: rem-calc(20);
+  ul {
+    li {
+      margin-bottom: rem-calc(20);
+    }
+  }
+}
