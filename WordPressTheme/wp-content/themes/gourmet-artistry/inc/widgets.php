@@ -39,7 +39,23 @@ class Latest_Posts extends WP_Widget {
     echo '<ul class="no-bullet">';
     
       $blog = new WP_Query($query);
-      while($blog->have_posts()): $blog->the_post();
+      while($blog->have_posts()): $blog->the_post(); ?>
+        <li class="row">
+          <div class="small-6 large-4 columns">
+            <?php the_post_thumbnail('entry'); ?>
+          </div>
+          <div class="small-6 large-8 columns">
+            <h4 class="latest-posts">
+              <a href="<?php the_permalink(); ?>">
+                <?php the_title(); ?>
+              </a>
+            </h4>
+            <div class="content show-for-small-only">
+              <?php the_excerpt() ?>
+            </div>
+          </div>
+        </li>
+      <?php
       endwhile;wp_reset_postdata();
     
     echo '</ul>';
