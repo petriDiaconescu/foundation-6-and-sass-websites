@@ -14,10 +14,15 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'gourmet-artistry' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'gourmet-artistry' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'gourmet-artistry' ), 'gourmet-artistry', '<a href="http://underscores.me/" rel="designer">Petri</a>' ); ?>
+		<div class="site-info row">
+      <div class="medium-6 columns">
+        <?php wp_nav_menu(array(
+            'theme_location' => 'footer-menu',
+            'menu_id' => 'footer-menu',
+            'items_wrap' => '<ul id="%1$s" class="%2$s vertical medium-horizontal menu text-center">%3$s</ul>'
+        )) ?>
+      </div>
+      
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
