@@ -126,3 +126,19 @@ header {
     }
   }
 }
+
+/**       Footer      **/
+footer.site-footer {
+  background-color: $black;
+  padding: rem-calc(20 0);
+  ul {
+    margin-top: rem-calc(20);
+    li {
+      a {
+        color: $white;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
