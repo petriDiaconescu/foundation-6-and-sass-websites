@@ -19,6 +19,7 @@ get_header(); ?>
   <div class="row">
     <div id="primary" class="content-area medium-8 columns">
       <main id="main" class="site-main" role="main"> 
+      <h2 class="latest-entries text-center separator">Latest Entries</h2> 
       <?php
       if ( have_posts() ) :
 

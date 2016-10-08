@@ -5,6 +5,22 @@ $headerDescription: 'Yellowtail', cursive;
   display: none;
 }
 
+h2.latest-entries {
+  font-size: rem-calc(30);
+}
+
+.separator::after {
+  content: "";
+  background-image: url(../img/separator.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  margin: 0 auto;
+  height: rem-calc(10);
+  width: rem-calc(50);
+  margin-bottom: rem-calc(20);
+}
+
 header {
   .header-image {
     height: rem-calc(376);
@@ -77,4 +93,26 @@ header {
 /**   Orbit    **/
 .orbit {
   margin-bottom: rem-calc(60);
+}
+
+/**     Content Area       **/
+.content-area {
+  h2 {
+    a {
+      color: $black;
+    }
+  }
+  .entry-meta {
+    a {
+      color: $black;
+    }
+    margin-bottom: rem-calc(15);
+  }
+  article {
+    margin-bottom: rem-calc(20);
+  }
+  .button {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 }
