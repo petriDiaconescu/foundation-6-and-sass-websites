@@ -2,16 +2,16 @@
 /**
  * Adds Foo_Widget widget.
  */
-class Foo_Widget extends WP_Widget {
+class Latest_Posts extends WP_Widget {
 
 	/**
 	 * Register widget with WordPress.
 	 */
 	function __construct() {
 		parent::__construct(
-			'foo_widget', // Base ID
-			__( 'Widget Title', 'text_domain' ), // Name
-			array( 'description' => __( 'A Foo Widget', 'text_domain' ), ) // Args
+			'blog_entries', // Base ID
+			__( 'Gourmet Artistry Latest Recipes', 'text_domain' ), // Name
+			array( 'description' => __( 'Print Latest Recipes with an Image', 'text_domain' ), ) // Args
 		);
 	}
 
@@ -28,7 +28,22 @@ class Foo_Widget extends WP_Widget {
 		if ( ! empty( $instance['title'] ) ) {
 			echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
 		}
-		echo __( esc_attr( 'Hello, World!' ), 'text_domain' );
+		
+    $query = array(
+      'post_type' => 'post',
+      'order' => 'DESC',
+      'cat' => 3,
+      'order_by' => 'date',
+      'posts_per_page' => 5  
+    );
+    echo '<ul class="no-bullet">';
+    
+      $blog = new WP_Query($query);
+      while($blog->have_posts()): $blog->the_post();
+      endwhile;wp_reset_postdata();
+    
+    echo '</ul>';
+    
 		echo $args['after_widget'];
 	}
 
@@ -70,6 +85,6 @@ class Foo_Widget extends WP_Widget {
 
 // register Foo_Widget widget
 function register_foo_widget() {
-    register_widget( 'Foo_Widget' );
+    register_widget( 'Latest_Posts' );
 }
 add_action( 'widgets_init', 'register_foo_widget' );
