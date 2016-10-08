@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="orbit" data-orbit>
+  <div class="orbit">
     <ul class="orbit-container">
       <?php 
         $i = 0;
