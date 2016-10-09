@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('row'); ?>>
   <?php if(is_single()){ ?>
     <div class="large-12 columns">
-      <?php the_post_thumbnail('single-image'); ?>
+      <?php the_post_thumbnail('single-image', array('class' => 'thumbnail')); ?>
     </div>
   <?php } else { ?>
     <div class="large-6 columns">

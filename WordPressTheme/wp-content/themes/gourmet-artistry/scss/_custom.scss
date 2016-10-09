@@ -179,3 +179,10 @@ footer.site-footer {
     }
   }
 }
+
+/**   Single      **/
+.single article.type-post {
+  @include breakpoint(large){
+    margin-top: rem-calc(56);
+  }
+}
