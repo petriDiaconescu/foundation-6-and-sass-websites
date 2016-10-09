@@ -8,6 +8,9 @@ $headerDescription: 'Yellowtail', cursive;
 h2.latest-entries {
   font-size: rem-calc(30);
 }
+h1.entry-title {
+  font-size: rem-calc(32);
+}
 
 .separator::after {
   content: "";
@@ -76,6 +79,14 @@ header {
       transition: all .3s ease-in-out;
       &:hover {
         background-color: darken($primary-color, 10);
+      }
+      &.current_page_item,
+      &.current-menu-item {
+        background-color: $white;
+        
+        i, a {
+          color: $primary-color;
+        }
       }
       a {
         color: $white;
