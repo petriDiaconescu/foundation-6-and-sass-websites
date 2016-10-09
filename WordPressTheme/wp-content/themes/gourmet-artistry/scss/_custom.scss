@@ -81,7 +81,8 @@ header {
         background-color: darken($primary-color, 10);
       }
       &.current_page_item,
-      &.current-menu-item {
+      &.current-menu-item,
+      &.current-menu-parent{
         background-color: $white;
         
         i, a {
