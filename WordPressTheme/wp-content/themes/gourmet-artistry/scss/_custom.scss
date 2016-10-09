@@ -25,7 +25,8 @@ h1.entry-title, h1.page-title {
 }
 
 header {
-  .header-image {
+  .header-image,
+  .no-image{
     height: rem-calc(376);
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,6 +49,10 @@ header {
         color: $white;
       }
     }
+  }
+  
+  .no-image {
+    background-color: darken($primary-color, 10);
   }
 }
 
