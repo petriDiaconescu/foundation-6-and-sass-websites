@@ -67,3 +67,19 @@ aside {
   }
 }
 
+
+.top-bar {
+  .top-bar-right {
+    padding: rem-calc(10);
+    li {
+      color: $white;
+      font-weight: bold;
+      padding-right: rem-calc(10);
+    }
+    .is-dropdown-submenu {
+      border: none;
+      background-color: darken($primary-color, 10);
+    }
+  }
+}
+
