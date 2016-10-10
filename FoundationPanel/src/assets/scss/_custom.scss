@@ -15,5 +15,23 @@ aside {
       }
     }
   }
+  
+  .is-accordion-submenu-parent {
+    & > a::after {
+      border: none;
+      color: $white;
+      content: "+";
+      top: 38%;
+    }
+  }
+  
+  .is-accordion-submenu-parent[aria-expanded="true"]{
+    background-color: darken($primary-color, 10);
+    
+    > a::after {
+      transform: initial;
+      content: "-";
+    }
+  }
 }
 
