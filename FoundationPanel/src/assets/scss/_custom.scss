@@ -8,10 +8,39 @@ p.title {
 aside {
   margin: 0!important;
   
-  ul {
-    li {
-      a {
-        font-weight: bold;
+  ul#menu {
+    margin: 0;
+    ul {
+      @include menu-icons('top');
+      @include breakpoint(large){
+        @include menu-icons('left')
+      }
+      li {
+        a {
+          text-align: center;
+          font-weight: bold;
+          font-size: rem-calc(20);
+          @include breakpoint(large){
+            text-align: left;
+          }
+          span {
+            @include breakpoint(medium){
+              display: block;
+              font-size: rem-calc(12);
+            }
+            @include breakpoint(large){
+              display: inline-block;
+            }
+          }
+          
+          i {
+            display: inline-block;
+            @include breakpoint(large){
+              margin-top: rem-calc(5);
+              margin-right: rem-calc(10);
+            }
+          }
+        }
       }
     }
   }
@@ -20,8 +49,11 @@ aside {
     & > a::after {
       border: none;
       color: $white;
-      content: "+";
+      content: "";
       top: 38%;
+      @include breakpoint(large){
+        content: "+";
+      }
     }
   }
   
