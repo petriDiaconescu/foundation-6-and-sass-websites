@@ -1,0 +1,19 @@
+p.title {
+  font-weight: bold;
+  color: $white;
+  text-transform: uppercase;
+  margin-top: rem-calc(16);
+}
+
+aside {
+  margin: 0!important;
+  
+  ul {
+    li {
+      a {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
