@@ -48,3 +48,12 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+.menu li a {
+  transition: all .3s ease;
+}
+
+.menu li a.active{
+  background-color: $primary-color;
+  color: $white;
+}
