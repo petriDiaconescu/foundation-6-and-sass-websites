@@ -7983,7 +7983,7 @@ h3 {
 
 /* line 275, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h4 {
-  font-size: 1.125rem;
+  font-size: 1.3125rem;
 }
 
 /* line 276, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -8231,7 +8231,7 @@ blockquote p {
 
   /* line 465, ../bower_components/foundation/scss/foundation/components/_type.scss */
   h4 {
-    font-size: 1.4375rem;
+    font-size: 1.625rem;
   }
 
   /* line 466, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -9818,4 +9818,93 @@ h3 {
 /* line 169, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 .custom-button:hover, .custom-button:focus {
   color: #FFFFFF;
+}
+
+/* line 50, ../scss/_custom.scss */
+footer {
+  background-color: #0068BA;
+  padding-top: 0.9375rem;
+}
+/* line 54, ../scss/_custom.scss */
+footer p, footer a {
+  color: #FFFFFF;
+}
+/* line 57, ../scss/_custom.scss */
+footer p.reserved {
+  background-color: #003865;
+  margin: 0;
+  padding: 0.625rem;
+}
+/* line 62, ../scss/_custom.scss */
+footer h4 {
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+/* line 67, ../scss/_custom.scss */
+footer .footer-nav {
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0;
+  padding: 0.875rem 0;
+}
+/* line 71, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
+footer .footer-nav li {
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0 0 0.4375rem 0;
+}
+/* line 76, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
+footer .footer-nav li a:not(.button) {
+  color: #FFFFFF;
+  display: block;
+  margin: 0;
+  padding: 0.4375rem 0.875rem;
+}
+/* line 81, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
+footer .footer-nav li a:not(.button):hover, footer .footer-nav li a:not(.button):focus {
+  background: #ff3535;
+  color: #FFFFFF;
+}
+/* line 86, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
+footer .footer-nav li a:not(.button):active {
+  color: #ff3535;
+}
+/* line 91, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
+footer .footer-nav li.active > a:first-child:not(.button) {
+  color: #1c9bff;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+}
+/* line 97, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
+footer .footer-nav li.divider {
+  border-top: 1px solid;
+  height: 0;
+  list-style: none;
+  padding: 0;
+  border-top-color: #FFFFFF;
+}
+/* line 105, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
+footer .footer-nav li.heading {
+  color: #0068BA;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 77, ../scss/_custom.scss */
+footer .footer-nav li {
+  margin: 0;
+}
+/* line 80, ../scss/_custom.scss */
+footer .footer-nav li a {
+  text-transform: uppercase;
+}
+/* line 86, ../scss/_custom.scss */
+footer .footer-nav input[type="text"].newsletter {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 100%;
+  float: left;
+  box-shadow: none;
 }
