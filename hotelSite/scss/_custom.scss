@@ -2,3 +2,18 @@
   margin-top: rem-calc(30);
   margin-bottom: rem-calc(30);
 }
+
+h2 {
+  color: $primary-color;
+  text-transform: uppercase;
+  margin: rem-calc(0 0 30 0);
+}
+
+h2:after {
+  content: " ";
+  display: block;
+  background-color: $primary-color;
+  width: rem-calc(55);
+  height: rem-calc(6);
+  margin: 0 auto;
+}

@@ -7973,7 +7973,7 @@ h1 {
 
 /* line 273, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h2 {
-  font-size: 1.6875rem;
+  font-size: 1.25rem;
 }
 
 /* line 274, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -8221,7 +8221,7 @@ blockquote p {
 
   /* line 463, ../bower_components/foundation/scss/foundation/components/_type.scss */
   h2 {
-    font-size: 2.3125rem;
+    font-size: 1.875rem;
   }
 
   /* line 464, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -9739,4 +9739,21 @@ th.hide-for-touch {
 .logo {
   margin-top: 1.875rem;
   margin-bottom: 1.875rem;
+}
+
+/* line 6, ../scss/_custom.scss */
+h2 {
+  color: #0068BA;
+  text-transform: uppercase;
+  margin: 0 0 1.875rem 0;
+}
+
+/* line 12, ../scss/_custom.scss */
+h2:after {
+  content: " ";
+  display: block;
+  background-color: #0068BA;
+  width: 3.4375rem;
+  height: 0.375rem;
+  margin: 0 auto;
 }
