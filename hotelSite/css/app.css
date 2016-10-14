@@ -9763,7 +9763,8 @@ h3 {
   color: #0068BA;
 }
 
-/* line 25, ../scss/_custom.scss */
+/***  Panel for Rooms    ***/
+/* line 26, ../scss/_custom.scss */
 .room-panel {
   border-style: none;
   border-width: 0;
@@ -9781,4 +9782,40 @@ h3 {
 /* line 62, ../bower_components/foundation/scss/foundation/components/_panels.scss */
 .room-panel > :last-child {
   margin-bottom: 0;
+}
+
+/***  Buttons    ***/
+/* line 39, ../scss/_custom.scss */
+.custom-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.625rem 1.25rem 0.6875rem 1.25rem;
+  font-size: 0.6875rem;
+  background-color: #ff3535;
+  border-color: #f60000;
+  color: #FFFFFF;
+  border-radius: 3px;
+  transition: background-color 300ms ease-out;
+  font-size: 1rem;
+  border-radius: 0.625rem !important;
+}
+/* line 163, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
+.custom-button:hover, .custom-button:focus {
+  background-color: #f60000;
+}
+/* line 169, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
+.custom-button:hover, .custom-button:focus {
+  color: #FFFFFF;
 }
