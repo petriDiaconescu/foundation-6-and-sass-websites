@@ -915,9 +915,9 @@ $secondary-color: #ff3535;
 
 // We use these to control the caption styles
 // $orbit-container-bg: none;
-// $orbit-caption-bg: rgba(51,51,51, .8);
+$orbit-caption-bg: $primary-color;
 // $orbit-caption-font-color: $white;
-// $orbit-caption-font-size: rem-calc(14);
+$orbit-caption-font-size: rem-calc(20);
 // $orbit-caption-position: "bottom"; // Supported values: "bottom", "under"
 // $orbit-caption-padding: rem-calc(10 14);
 // $orbit-caption-height: auto;
@@ -934,8 +934,8 @@ $secondary-color: #ff3535;
 
 // We use these to control the bullet nav styles
 // $orbit-bullet-nav-color: $iron;
-// $orbit-bullet-nav-color-active: $aluminum;
-// $orbit-bullet-radius: rem-calc(9);
+$orbit-bullet-nav-color-active: $primary-color;
+$orbit-bullet-radius: rem-calc(20);
 
 // We use these to controls the style of slide numbers
 // $orbit-slide-number-bg: rgba(0,0,0,0);
