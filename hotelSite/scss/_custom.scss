@@ -22,6 +22,7 @@ h3 {
   color: $primary-color;
 }
 
+
 /**  Social Menu  **/
 .menu-social {
   li {
@@ -198,9 +199,18 @@ form {
   }
 }
 
+div.slider {
+  margin-bottom: rem-calc(20);
+}
+
+div.room-info {
+  margin-bottom: rem-calc(20);
+}
 
 @media #{$small-up}{}
-@media #{$small-only}{}
+@media #{$small-only}{
+  
+}
 
 @media #{$medium-up}{
   div.featured-image {
@@ -208,6 +218,10 @@ form {
       bottom: rem-calc(30);
       padding: rem-calc(10 50);
     }
+  }
+  
+  div.slider {
+   margin-bottom: rem-calc(0);
   }
 }
 @media #{$medium-only}{}

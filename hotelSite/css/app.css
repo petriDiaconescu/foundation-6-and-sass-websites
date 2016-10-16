@@ -7073,7 +7073,7 @@ meta.foundation-mq-topbar {
 }
 /* line 331, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li {
-  background: #ff3535;
+  background: #0068BA;
 }
 /* line 334, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > a {
@@ -9765,25 +9765,25 @@ h3 {
 }
 
 /**  Social Menu  **/
-/* line 27, ../scss/_custom.scss */
+/* line 28, ../scss/_custom.scss */
 .menu-social li {
   background-color: transparent !important;
   display: inline-block;
   margin-right: 1.25rem;
 }
-/* line 32, ../scss/_custom.scss */
+/* line 33, ../scss/_custom.scss */
 .menu-social li a {
   background-color: transparent !important;
   padding: 0;
   margin: 0;
 }
-/* line 37, ../scss/_custom.scss */
+/* line 38, ../scss/_custom.scss */
 .menu-social li a i {
   font-size: 2.5rem;
 }
 
 /***  Panel for Rooms    ***/
-/* line 45, ../scss/_custom.scss */
+/* line 46, ../scss/_custom.scss */
 .room-panel {
   border-style: none;
   border-width: 0;
@@ -9805,7 +9805,7 @@ h3 {
 }
 
 /***  Buttons    ***/
-/* line 59, ../scss/_custom.scss */
+/* line 60, ../scss/_custom.scss */
 .custom-button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -9841,12 +9841,12 @@ h3 {
 }
 
 /**  featured images  **/
-/* line 71, ../scss/_custom.scss */
+/* line 72, ../scss/_custom.scss */
 .featured-image {
   position: relative;
   margin-bottom: 1.25rem;
 }
-/* line 75, ../scss/_custom.scss */
+/* line 76, ../scss/_custom.scss */
 .featured-image .featured-text {
   position: absolute;
   left: 0;
@@ -9855,13 +9855,13 @@ h3 {
   background-color: #0068BA;
   color: #FFFFFF;
 }
-/* line 83, ../scss/_custom.scss */
+/* line 84, ../scss/_custom.scss */
 .featured-image .featured-text p {
   margin: 0;
 }
 
 /**  rooms accordion  **/
-/* line 92, ../scss/_custom.scss */
+/* line 93, ../scss/_custom.scss */
 .accordion .accordion-navigation {
   display: block;
   margin-bottom: 0 !important;
@@ -9885,7 +9885,7 @@ h3 {
 .accordion .accordion-navigation > a:hover {
   background: #ff3535;
 }
-/* line 104, ../scss/_custom.scss */
+/* line 105, ../scss/_custom.scss */
 .accordion .content {
   display: none;
   padding: 0.9375rem;
@@ -9898,27 +9898,27 @@ h3 {
 }
 
 /**  footer  **/
-/* line 111, ../scss/_custom.scss */
+/* line 112, ../scss/_custom.scss */
 footer {
   background-color: #0068BA;
   padding-top: 0.9375rem;
 }
-/* line 115, ../scss/_custom.scss */
+/* line 116, ../scss/_custom.scss */
 footer p, footer a {
   color: #FFFFFF;
 }
-/* line 118, ../scss/_custom.scss */
+/* line 119, ../scss/_custom.scss */
 footer p.reserved {
   background-color: #003865;
   margin: 0;
   padding: 0.625rem;
 }
-/* line 123, ../scss/_custom.scss */
+/* line 124, ../scss/_custom.scss */
 footer h4 {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-/* line 128, ../scss/_custom.scss */
+/* line 129, ../scss/_custom.scss */
 footer .footer-nav {
   display: block;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -9970,15 +9970,15 @@ footer .footer-nav li.heading {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 138, ../scss/_custom.scss */
+/* line 139, ../scss/_custom.scss */
 footer .footer-nav li {
   margin: 0;
 }
-/* line 141, ../scss/_custom.scss */
+/* line 142, ../scss/_custom.scss */
 footer .footer-nav li a {
   text-transform: uppercase;
 }
-/* line 147, ../scss/_custom.scss */
+/* line 148, ../scss/_custom.scss */
 footer .footer-nav input[type="text"].newsletter {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -9987,11 +9987,11 @@ footer .footer-nav input[type="text"].newsletter {
   box-shadow: none;
 }
 
-/* line 154, ../scss/_custom.scss */
+/* line 155, ../scss/_custom.scss */
 form {
   background-color: #e5e5e5;
 }
-/* line 158, ../scss/_custom.scss */
+/* line 159, ../scss/_custom.scss */
 form fieldset legend {
   width: 100%;
   background-color: #ff3535;
@@ -10000,18 +10000,18 @@ form fieldset legend {
   font-size: 1.375rem;
   text-transform: uppercase;
 }
-/* line 167, ../scss/_custom.scss */
+/* line 168, ../scss/_custom.scss */
 form fieldset label {
   text-transform: uppercase;
 }
 
-/* line 173, ../scss/_custom.scss */
+/* line 174, ../scss/_custom.scss */
 .room-info {
   overflow: hidden;
   cursor: pointer;
   position: relative;
 }
-/* line 178, ../scss/_custom.scss */
+/* line 179, ../scss/_custom.scss */
 .room-info .more-information {
   background-color: rgba(0, 104, 186, 0.8);
   background-clip: content-box;
@@ -10023,7 +10023,7 @@ form fieldset label {
   opacity: 0;
   transition: all 1s ease;
 }
-/* line 189, ../scss/_custom.scss */
+/* line 190, ../scss/_custom.scss */
 .room-info .more-information a {
   font-size: 1.5rem;
   border: 5px solid #FFFFFF;
@@ -10034,22 +10034,37 @@ form fieldset label {
   display: block;
 }
 
+/* line 202, ../scss/_custom.scss */
+div.slider {
+  margin-bottom: 1.25rem;
+}
+
+/* line 206, ../scss/_custom.scss */
+div.room-info {
+  margin-bottom: 1.25rem;
+}
+
 @media only screen and (min-width: 40.0625em) {
-  /* line 207, ../scss/_custom.scss */
+  /* line 217, ../scss/_custom.scss */
   div.featured-image .featured-text {
     bottom: 1.875rem;
     padding: 0.625rem 3.125rem;
   }
+
+  /* line 223, ../scss/_custom.scss */
+  div.slider {
+    margin-bottom: 0;
+  }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 216, ../scss/_custom.scss */
+  /* line 230, ../scss/_custom.scss */
   .orbit-caption {
     width: auto !important;
     padding: 1.875rem 1.25rem;
     margin-bottom: 3.125rem;
   }
 
-  /* line 223, ../scss/_custom.scss */
+  /* line 237, ../scss/_custom.scss */
   .room-info:hover .more-information {
     opacity: 1;
   }
