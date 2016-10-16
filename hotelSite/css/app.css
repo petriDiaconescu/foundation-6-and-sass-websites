@@ -9908,3 +9908,12 @@ footer .footer-nav input[type="text"].newsletter {
   float: left;
   box-shadow: none;
 }
+
+@media only screen and (min-width: 64.0625em) {
+  /* line 101, ../scss/_custom.scss */
+  .orbit-caption {
+    width: auto !important;
+    padding: 1.875rem 1.25rem;
+    margin-bottom: 3.125rem;
+  }
+}
