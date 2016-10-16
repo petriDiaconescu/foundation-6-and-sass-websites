@@ -9840,28 +9840,65 @@ h3 {
   margin: 0;
 }
 
+/**  rooms accordion  **/
+/* line 72, ../scss/_custom.scss */
+.accordion .accordion-navigation {
+  display: block;
+  margin-bottom: 0 !important;
+  text-transform: uppercase;
+}
+/* line 53, ../bower_components/foundation/scss/foundation/components/_accordion.scss */
+.accordion .accordion-navigation.active > a {
+  background: #ff3535;
+  color: #222222;
+}
+/* line 58, ../bower_components/foundation/scss/foundation/components/_accordion.scss */
+.accordion .accordion-navigation > a {
+  background: #0068BA;
+  color: #FFFFFF;
+  padding: 0.5rem;
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1.25rem;
+}
+/* line 93, ../bower_components/foundation/scss/foundation/components/_accordion.scss */
+.accordion .accordion-navigation > a:hover {
+  background: #ff3535;
+}
+/* line 84, ../scss/_custom.scss */
+.accordion .content {
+  display: none;
+  padding: 0.9375rem;
+  text-transform: none;
+}
+/* line 123, ../bower_components/foundation/scss/foundation/components/_accordion.scss */
+.accordion .content.active {
+  background: #FFFFFF;
+  display: block;
+}
+
 /**  footer  **/
-/* line 70, ../scss/_custom.scss */
+/* line 91, ../scss/_custom.scss */
 footer {
   background-color: #0068BA;
   padding-top: 0.9375rem;
 }
-/* line 74, ../scss/_custom.scss */
+/* line 95, ../scss/_custom.scss */
 footer p, footer a {
   color: #FFFFFF;
 }
-/* line 77, ../scss/_custom.scss */
+/* line 98, ../scss/_custom.scss */
 footer p.reserved {
   background-color: #003865;
   margin: 0;
   padding: 0.625rem;
 }
-/* line 82, ../scss/_custom.scss */
+/* line 103, ../scss/_custom.scss */
 footer h4 {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-/* line 87, ../scss/_custom.scss */
+/* line 108, ../scss/_custom.scss */
 footer .footer-nav {
   display: block;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -9913,15 +9950,15 @@ footer .footer-nav li.heading {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 97, ../scss/_custom.scss */
+/* line 118, ../scss/_custom.scss */
 footer .footer-nav li {
   margin: 0;
 }
-/* line 100, ../scss/_custom.scss */
+/* line 121, ../scss/_custom.scss */
 footer .footer-nav li a {
   text-transform: uppercase;
 }
-/* line 106, ../scss/_custom.scss */
+/* line 127, ../scss/_custom.scss */
 footer .footer-nav input[type="text"].newsletter {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -9931,14 +9968,14 @@ footer .footer-nav input[type="text"].newsletter {
 }
 
 @media only screen and (min-width: 40.0625em) {
-  /* line 119, ../scss/_custom.scss */
+  /* line 140, ../scss/_custom.scss */
   div.featured-image .featured-text {
     bottom: 1.875rem;
     padding: 0.625rem 3.125rem;
   }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 128, ../scss/_custom.scss */
+  /* line 149, ../scss/_custom.scss */
   .orbit-caption {
     width: auto !important;
     padding: 1.875rem 1.25rem;
