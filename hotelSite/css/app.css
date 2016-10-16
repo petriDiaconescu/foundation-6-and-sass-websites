@@ -9820,27 +9820,48 @@ h3 {
   color: #FFFFFF;
 }
 
-/* line 50, ../scss/_custom.scss */
+/**  featured images  **/
+/* line 51, ../scss/_custom.scss */
+.featured-image {
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+/* line 55, ../scss/_custom.scss */
+.featured-image .featured-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0.625rem 1.25rem;
+  background-color: #0068BA;
+  color: #FFFFFF;
+}
+/* line 63, ../scss/_custom.scss */
+.featured-image .featured-text p {
+  margin: 0;
+}
+
+/**  footer  **/
+/* line 70, ../scss/_custom.scss */
 footer {
   background-color: #0068BA;
   padding-top: 0.9375rem;
 }
-/* line 54, ../scss/_custom.scss */
+/* line 74, ../scss/_custom.scss */
 footer p, footer a {
   color: #FFFFFF;
 }
-/* line 57, ../scss/_custom.scss */
+/* line 77, ../scss/_custom.scss */
 footer p.reserved {
   background-color: #003865;
   margin: 0;
   padding: 0.625rem;
 }
-/* line 62, ../scss/_custom.scss */
+/* line 82, ../scss/_custom.scss */
 footer h4 {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-/* line 67, ../scss/_custom.scss */
+/* line 87, ../scss/_custom.scss */
 footer .footer-nav {
   display: block;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -9892,15 +9913,15 @@ footer .footer-nav li.heading {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 77, ../scss/_custom.scss */
+/* line 97, ../scss/_custom.scss */
 footer .footer-nav li {
   margin: 0;
 }
-/* line 80, ../scss/_custom.scss */
+/* line 100, ../scss/_custom.scss */
 footer .footer-nav li a {
   text-transform: uppercase;
 }
-/* line 86, ../scss/_custom.scss */
+/* line 106, ../scss/_custom.scss */
 footer .footer-nav input[type="text"].newsletter {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -9909,8 +9930,15 @@ footer .footer-nav input[type="text"].newsletter {
   box-shadow: none;
 }
 
+@media only screen and (min-width: 40.0625em) {
+  /* line 119, ../scss/_custom.scss */
+  div.featured-image .featured-text {
+    bottom: 1.875rem;
+    padding: 0.625rem 3.125rem;
+  }
+}
 @media only screen and (min-width: 64.0625em) {
-  /* line 101, ../scss/_custom.scss */
+  /* line 128, ../scss/_custom.scss */
   .orbit-caption {
     width: auto !important;
     padding: 1.875rem 1.25rem;

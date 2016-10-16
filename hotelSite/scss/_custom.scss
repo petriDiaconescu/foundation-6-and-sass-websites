@@ -46,7 +46,27 @@ h3 {
   
   border-radius: rem-calc(10)!important;  
 }
+/**  featured images  **/
 
+.featured-image {
+  position: relative;
+  margin-bottom: rem-calc(20);
+  
+  .featured-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: rem-calc(10 20);
+    background-color: $primary-color;
+    color: $white;
+    
+    p {
+      margin: 0;
+    }
+  }
+}
+
+/**  footer  **/
 footer {
   background-color: $primary-color;
   padding-top: rem-calc(15);
@@ -94,7 +114,14 @@ footer {
 @media #{$small-up}{}
 @media #{$small-only}{}
 
-@media #{$medium-up}{}
+@media #{$medium-up}{
+  div.featured-image {
+    .featured-text {
+      bottom: rem-calc(30);
+      padding: rem-calc(10 50);
+    }
+  }
+}
 @media #{$medium-only}{}
 
 @media #{$large-up}{
