@@ -131,6 +131,25 @@ footer {
   }
 }
 
+form {
+  background-color: $white-smoke;
+  
+  fieldset {
+    legend {
+      width: 100%;
+      background-color: $secondary-color;
+      text-align: center;
+      color: $white;
+      font-size: rem-calc(22);
+      text-transform: uppercase;
+    }
+    
+    label {
+      text-transform: uppercase;
+    }
+  }
+}
+
 
 @media #{$small-up}{}
 @media #{$small-only}{}
