@@ -50,8 +50,9 @@ h3 {
     $border: false
   );
   
-    color: $primary-color;
-    text-transform: uppercase;
+  color: $primary-color;
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 /***  Buttons    ***/
@@ -169,6 +170,34 @@ form {
   }
 }
 
+.room-info {
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+
+  .more-information {
+    background-color: rgba($primary-color, 0.8);
+    background-clip: content-box;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 1s ease;
+
+    a {
+      font-size: rem-calc(24);
+      border: 5px solid $white;
+      width: 80%;
+      margin: 0 auto;
+      color: $white;
+      margin-top: rem-calc(120);
+      display: block;
+    }
+  }
+}
+
 
 @media #{$small-up}{}
 @media #{$small-only}{}
@@ -188,6 +217,12 @@ form {
     width: auto!important;
     padding: rem-calc(30 20);
     margin-bottom: rem-calc(50);
+  }
+  
+  .room-info:hover {
+    .more-information {
+      opacity: 1;
+    }
   }
 }
 @media #{$large-only}{}

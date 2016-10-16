@@ -9793,6 +9793,7 @@ h3 {
   color: #333333;
   color: #0068BA;
   text-transform: uppercase;
+  margin-bottom: 0;
 }
 /* line 61, ../bower_components/foundation/scss/foundation/components/_panels.scss */
 .room-panel > :first-child {
@@ -9804,7 +9805,7 @@ h3 {
 }
 
 /***  Buttons    ***/
-/* line 58, ../scss/_custom.scss */
+/* line 59, ../scss/_custom.scss */
 .custom-button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -9840,12 +9841,12 @@ h3 {
 }
 
 /**  featured images  **/
-/* line 70, ../scss/_custom.scss */
+/* line 71, ../scss/_custom.scss */
 .featured-image {
   position: relative;
   margin-bottom: 1.25rem;
 }
-/* line 74, ../scss/_custom.scss */
+/* line 75, ../scss/_custom.scss */
 .featured-image .featured-text {
   position: absolute;
   left: 0;
@@ -9854,13 +9855,13 @@ h3 {
   background-color: #0068BA;
   color: #FFFFFF;
 }
-/* line 82, ../scss/_custom.scss */
+/* line 83, ../scss/_custom.scss */
 .featured-image .featured-text p {
   margin: 0;
 }
 
 /**  rooms accordion  **/
-/* line 91, ../scss/_custom.scss */
+/* line 92, ../scss/_custom.scss */
 .accordion .accordion-navigation {
   display: block;
   margin-bottom: 0 !important;
@@ -9884,7 +9885,7 @@ h3 {
 .accordion .accordion-navigation > a:hover {
   background: #ff3535;
 }
-/* line 103, ../scss/_custom.scss */
+/* line 104, ../scss/_custom.scss */
 .accordion .content {
   display: none;
   padding: 0.9375rem;
@@ -9897,27 +9898,27 @@ h3 {
 }
 
 /**  footer  **/
-/* line 110, ../scss/_custom.scss */
+/* line 111, ../scss/_custom.scss */
 footer {
   background-color: #0068BA;
   padding-top: 0.9375rem;
 }
-/* line 114, ../scss/_custom.scss */
+/* line 115, ../scss/_custom.scss */
 footer p, footer a {
   color: #FFFFFF;
 }
-/* line 117, ../scss/_custom.scss */
+/* line 118, ../scss/_custom.scss */
 footer p.reserved {
   background-color: #003865;
   margin: 0;
   padding: 0.625rem;
 }
-/* line 122, ../scss/_custom.scss */
+/* line 123, ../scss/_custom.scss */
 footer h4 {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-/* line 127, ../scss/_custom.scss */
+/* line 128, ../scss/_custom.scss */
 footer .footer-nav {
   display: block;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -9969,15 +9970,15 @@ footer .footer-nav li.heading {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 137, ../scss/_custom.scss */
+/* line 138, ../scss/_custom.scss */
 footer .footer-nav li {
   margin: 0;
 }
-/* line 140, ../scss/_custom.scss */
+/* line 141, ../scss/_custom.scss */
 footer .footer-nav li a {
   text-transform: uppercase;
 }
-/* line 146, ../scss/_custom.scss */
+/* line 147, ../scss/_custom.scss */
 footer .footer-nav input[type="text"].newsletter {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -9986,11 +9987,11 @@ footer .footer-nav input[type="text"].newsletter {
   box-shadow: none;
 }
 
-/* line 153, ../scss/_custom.scss */
+/* line 154, ../scss/_custom.scss */
 form {
   background-color: #e5e5e5;
 }
-/* line 157, ../scss/_custom.scss */
+/* line 158, ../scss/_custom.scss */
 form fieldset legend {
   width: 100%;
   background-color: #ff3535;
@@ -9999,23 +10000,57 @@ form fieldset legend {
   font-size: 1.375rem;
   text-transform: uppercase;
 }
-/* line 166, ../scss/_custom.scss */
+/* line 167, ../scss/_custom.scss */
 form fieldset label {
   text-transform: uppercase;
 }
 
+/* line 173, ../scss/_custom.scss */
+.room-info {
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+/* line 178, ../scss/_custom.scss */
+.room-info .more-information {
+  background-color: rgba(0, 104, 186, 0.8);
+  background-clip: content-box;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 1s ease;
+}
+/* line 189, ../scss/_custom.scss */
+.room-info .more-information a {
+  font-size: 1.5rem;
+  border: 5px solid #FFFFFF;
+  width: 80%;
+  margin: 0 auto;
+  color: #FFFFFF;
+  margin-top: 7.5rem;
+  display: block;
+}
+
 @media only screen and (min-width: 40.0625em) {
-  /* line 178, ../scss/_custom.scss */
+  /* line 207, ../scss/_custom.scss */
   div.featured-image .featured-text {
     bottom: 1.875rem;
     padding: 0.625rem 3.125rem;
   }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 187, ../scss/_custom.scss */
+  /* line 216, ../scss/_custom.scss */
   .orbit-caption {
     width: auto !important;
     padding: 1.875rem 1.25rem;
     margin-bottom: 3.125rem;
+  }
+
+  /* line 223, ../scss/_custom.scss */
+  .room-info:hover .more-information {
+    opacity: 1;
   }
 }
